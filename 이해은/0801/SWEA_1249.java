@@ -7,6 +7,9 @@ import java.util.Queue;
 
 class SWEA_1249
 {
+	//참고한 사이트
+	//https://dheldh77.tistory.com/entry/SWEA-1249-SW-%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0-%EC%9D%91%EC%9A%A9-4%EC%9D%BC%EC%B0%A8-%EB%B3%B4%EA%B8%89%EB%A1%9C
+	//https://chanhuiseok.github.io/posts/algo-32/
     public static class Node{
 		int x;
 		int y;
@@ -22,7 +25,7 @@ class SWEA_1249
 	//특정 칸 까지 이동하는데 소요된 최소 복구 시간 기록 배열
 	static int[][] depArr = new int[100][100];
 	
-	//상 우 하 좌
+	//상 우 좌 하
 	static int[] dx = {-1, 0, 1, 0};
 	static int[] dy = {0, 1, 0, -1};
     
@@ -50,7 +53,7 @@ class SWEA_1249
 			
 			/////////////여기까지 데이터 입력 받기 완료
 			
-			//Dfs
+			//BFS
 			//시작 노드를 큐에 넣고
 			//====================================== while(!q.isEmpty)
 			//큐에서 원소를 빼고,
