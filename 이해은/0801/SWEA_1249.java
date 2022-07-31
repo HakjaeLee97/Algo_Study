@@ -22,7 +22,7 @@ class SWEA_1249
 	//특정 칸 까지 이동하는데 소요된 최소 복구 시간 기록 배열
 	static int[][] depArr = new int[100][100];
 	
-	//상 우 좌 하
+	//상 우 하 좌
 	static int[] dx = {-1, 0, 1, 0};
 	static int[] dy = {0, 1, 0, -1};
     
