@@ -3,7 +3,7 @@ package August_First_Week;
 import java.util.*;
 import java.io.*;
 
-public class no_14891 {
+public class BOJ_14891_톱니바퀴 {
 	
 	static int[][]wheel = new int[4][8];
 	static int[] isTurn;
