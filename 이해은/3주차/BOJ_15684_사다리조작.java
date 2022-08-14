@@ -16,7 +16,6 @@ public class BOJ_15684_사다리조작 {
 	//세로선 5개인 경우 (000, 1 ~ 4)
 	//정보 배열은 [M + 1][N] 로 만들고 인덱스는 1부터 활용
 	static boolean[][] connectInformationArray;
-	static boolean[][] connectInformationArrayTemp;
 	static int minResult;
 	
 	public static void main(String[] args) throws Exception {
@@ -28,14 +27,12 @@ public class BOJ_15684_사다리조작 {
 		H = Integer.parseInt(st.nextToken());
 		
 		connectInformationArray = new boolean[H + 1][N];
-		connectInformationArrayTemp = new boolean[H + 1][N];
 		
 		for(int m = 0; m < M; m++) {
 			st = new StringTokenizer(br.readLine(), " ");
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			connectInformationArray[a][b] = true;
-			connectInformationArrayTemp[a][b] = true;
 		}
 		
 		ans = -1;
