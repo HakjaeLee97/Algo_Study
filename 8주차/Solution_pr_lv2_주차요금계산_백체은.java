@@ -44,9 +44,6 @@ public class Solution_pr_lv2_주차요금계산 {
 			}
 		}
 		
-		// 람다 사용법
-		// Collections.sort(myBookList, (Book b1, Book b2)-> b1.getPrice()-b2.getPrice());
-		// Collections.sort(out, (int[] c1, int[] c2) -> c1[1] - c2[1]);
 		Collections.sort(in, (c1, c2) -> c1[1] - c2[1]);
 		Collections.sort(out, (c1, c2) -> Integer.compare(c1[1], c2[1]));
 //		for (int[] i : in) {

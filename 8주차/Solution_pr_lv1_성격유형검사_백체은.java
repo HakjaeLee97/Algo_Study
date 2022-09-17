@@ -6,12 +6,8 @@ public class Solution_pr_lv1_성격유형검사 {
 
 	public static void main(String[] args) throws Exception {
 
-		System.out.println(solution(new String[] {"AN", "CF", "MJ", "RT", "NA"},new int[] {5, 3, 2, 7, 5}));
-		System.out.println(solution(new String[] {"TR", "RT", "TR"},new int[] {7, 1, 3}));
-
-		// R T C F J M A N 맵? 만들어두고 점수 더하기
-		// 크기 같으면 사전 순으로 빠른 값 출력
-		// 4쌍 크기 비교해서 append >= 사용하면 될 듯
+		System.out.println(solution(new String[] {"AN", "CF", "MJ", "RT", "NA"}, new int[] {5, 3, 2, 7, 5}));
+		System.out.println(solution(new String[] {"TR", "RT", "TR"}, new int[] {7, 1, 3}));
 	}
 
 	static String solution(String[] survey, int[] choices) {
