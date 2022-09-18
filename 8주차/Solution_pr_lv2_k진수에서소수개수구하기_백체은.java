@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Solution {
-	public int solution(int n, int k) {
+		public int solution(int n, int k) {
 		int answer = 0;
 
 		// k진수로 바꾸기 : k로 나눈 나머지들
@@ -12,27 +12,18 @@ class Solution {
 		}
 		sb.reverse();
 
+		// 0으로 구분 후 소수 판별
 		StringTokenizer st = new StringTokenizer(sb.toString(), "0");
-		while (st.hasMoreTokens()) {
+		at : while (st.hasMoreTokens()) {
 			long num = Long.parseLong(st.nextToken());
-			if (isPrime(num)) {
-				answer++;
+			if(num < 2) continue;
+			for (int i = 2; i <= Math.sqrt(num); i++) {
+				if(num % i == 0) {
+					continue at;
+				}
 			}
+			answer++;
 		}
 		return answer;
-	}
-
-	// 소수확인
-	public boolean isPrime(long l) {
-
-		if (l < 2)
-			return false;
-
-		for (int i = 2; i <= Math.sqrt(l); i++) {
-			if (l % i == 0) {
-				return false;
-			}
-		}
-		return true;
 	}
 }
