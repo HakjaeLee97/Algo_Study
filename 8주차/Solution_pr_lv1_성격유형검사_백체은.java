@@ -1,18 +1,8 @@
-package a0919;
-
 import java.util.HashMap;
 
-public class Solution_pr_lv1_성격유형검사 {
-
-	public static void main(String[] args) throws Exception {
-
-		System.out.println(solution(new String[] {"AN", "CF", "MJ", "RT", "NA"}, new int[] {5, 3, 2, 7, 5}));
-		System.out.println(solution(new String[] {"TR", "RT", "TR"}, new int[] {7, 1, 3}));
-	}
-
-	static String solution(String[] survey, int[] choices) {
-		
-		HashMap<Character, Integer> map = new HashMap<>();
+class Solution {
+    public String solution(String[] survey, int[] choices) {
+        HashMap<Character, Integer> map = new HashMap<>();
 		map.put('R', 0);
 		map.put('T', 0);
 		map.put('C', 0);
@@ -63,5 +53,5 @@ public class Solution_pr_lv1_성격유형검사 {
 		}
 		
 		return sb.toString();
-	}
+    }
 }
